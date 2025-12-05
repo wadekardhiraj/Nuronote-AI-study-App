@@ -1,0 +1,15 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App'; // Import the main App component from App.jsx
+
+// Find the root element in index.html and render the React App into it.
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If React DOM is not available (older versions), use the fallback method:
+// ReactDOM.render(<App />, document.getElementById('root'));
